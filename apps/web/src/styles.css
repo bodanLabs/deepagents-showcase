@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(15, 118, 110, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.12), transparent 45%),
+    radial-gradient(circle at 20% 85%, rgba(15, 118, 110, 0.08), transparent 50%),
+    linear-gradient(180deg, #f8f7f4 0%, #f1ece5 100%);
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  opacity: 0.06;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}

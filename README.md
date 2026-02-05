@@ -2,6 +2,9 @@
 
 A full-stack chat application that showcases **LangChain Deep Agents** with a FastAPI backend and a React frontend built with [assistant-ui](https://assistant-ui.com/). The backend streams responses over SSE; the frontend provides a chat UI with tool calls, reasoning, and file previews.
 
+<img width="1117" height="1157" alt="image" src="https://github.com/user-attachments/assets/dab6c80e-f65a-4d60-9533-f0d0422a6d38" />
+
+
 ## What's in this repo
 
 - **`apps/api`** — FastAPI service that runs a Deep Agent (OpenAI), exposes `/api/chat` and `/api/chat/stream`, and streams via Server-Sent Events.
